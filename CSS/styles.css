@@ -1,0 +1,492 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+}
+:root {
+  --black-color: #202020;
+  --blue-color: #18a0fb;
+}
+
+/* ! Header Section Start  */
+header {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 999999;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+nav ul li {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--black-color);
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.login-btn {
+  border-radius: 6px;
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+  padding: 8px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+}
+.register-btn {
+  border-radius: 6px;
+  border: 1px solid var(--blue-color);
+  color: white;
+  padding: 8px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: var(--blue-color);
+}
+/* ! Header Section End */
+/* ! Hero Section Start */
+.hero-section {
+  width: 100%;
+  height: 600px;
+  background: url("../assets/hero-bg.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 77px;
+}
+.hero-overlay {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 999;
+}
+.hero-content {
+  position: absolute;
+  width: 100%;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+h1 {
+  font-weight: normal;
+  font-size: 56px;
+  text-align: center;
+  color: white;
+}
+.hero-content > button {
+  margin: auto;
+  display: table;
+  margin-top: 30px;
+  padding: 12px 35px;
+}
+/* ! Hero Section End */
+/* ! Snap photos section start */
+.snap-photo--container {
+  width: 100%;
+  background-color: white;
+  padding: 100px 20px;
+}
+.mid-snap-photo {
+  max-width: 1320px;
+  margin: auto;
+}
+.mid-snap-photo h2 {
+  font-weight: 600;
+  font-size: 48px;
+}
+.snap-content--container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0px;
+  gap: 50px;
+}
+.content-item {
+  flex-basis: 48%;
+}
+.content-item h4 {
+  font-size: 24px;
+}
+.content-item p {
+  font-size: 18px;
+  padding: 20px 0px;
+}
+/* ! Snap photos section end */
+/* ! ever posted section start */
+.ever-posted {
+  text-align: center;
+}
+.ever-posted p {
+  font-weight: normal;
+  font-size: 36px;
+  margin-top: 20px;
+}
+.ever-posted--container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding: 50px 0px;
+}
+.ever-posted--items {
+  flex-basis: 48%;
+}
+.ever-posted--items h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.ever-posted--items p,
+.blog-card p {
+  font-size: 18px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.8);
+}
+.post-content {
+  padding: 20px 0px;
+}
+.ever-posted--items img {
+  max-width: 100%;
+}
+/* ! ever posted section end */
+/* ! Make your photos section start */
+.blogs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+}
+.blog-card {
+  flex-basis: 30%;
+  border: 1px solid #ccc;
+}
+.blog-card img {
+  width: 100%;
+}
+.blog-card h4,
+.free-trial h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.card-content {
+  padding: 30px;
+}
+
+/* ! Make your photos section end */
+/* ! free trial section start */
+.form-main--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+.free-trial {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+.form-h4 {
+  padding-bottom: 20px;
+}
+.free-trial form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+.error-message {
+  font-size: 12px;
+  color: red;
+}
+.input-field {
+  flex-basis: 48%;
+  border: 1px solid #c4c4c4;
+  font-size: 15px;
+  font-weight: normal;
+  color: black;
+  padding: 10px;
+}
+.pass-field {
+  width: 100%;
+}
+.full-btn {
+  width: auto;
+}
+/* ! free trial section end */
+/* ! Footer Section Start */
+.main-footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px;
+}
+.top-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.top-footer-items {
+  flex-basis: 50%;
+}
+.footer-main-content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-mid-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.foot-content--left {
+  flex-basis: 80%;
+}
+.foot-content--right {
+  flex-basis: 20%;
+}
+.footer-mid-content ul li {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  font-weight: normal;
+}
+.footer-mid-content ul li h5 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.footer-btn-grp {
+  flex-direction: column;
+}
+.footer-btn-grp > .login-btn {
+  padding: 8px 40px;
+}
+.bottom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.bottom-footer p {
+  font-size: 15px;
+  font-weight: normal;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bottom-footer ul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.bottom-footer ul li {
+  background-color: rgba(75, 75, 75, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  padding: 18px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.bottom-footer ul li:hover {
+  background-color: var(--blue-color);
+}
+/* ! Footer Section End */
+
+@media only screen and (min-width: 0px) and (max-width: 370px) {
+  .login-btn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 575px) {
+  /* ! Header Section Start */
+  header {
+    padding: 20px !important;
+  }
+  header img {
+    width: 100px;
+  }
+  .btn-group {
+    gap: 10px;
+  }
+  .login-btn {
+    padding: 8px 20px;
+  }
+  .register-btn {
+    padding: 8px 20px;
+  }
+  /* ! Header Section End */
+}
+
+@media only screen and (min-width: 200px) and (max-width: 991px) {
+  /* ! Header Section Start */
+  header {
+    padding: 20px 40px;
+  }
+  nav {
+    display: none;
+  }
+  /* ! Header Section End */
+  /* ! Hero Section Start */
+  .hero-section {
+    max-width: 100%;
+    background-position: top;
+  }
+  .hero-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  h1 {
+    font-size: 30px;
+  }
+  /* ! Hero Section End */
+  /* ! Snap photos section start */
+  .snap-photo--container {
+    max-width: 100%;
+    padding: 50px 20px;
+  }
+  .mid-snap-photo {
+    max-width: 100%;
+    margin: auto;
+  }
+  .mid-snap-photo h2 {
+    font-size: 24px;
+  }
+  .content-item {
+    flex-basis: 100%;
+  }
+  .content-item h4 {
+    font-size: 18px;
+  }
+  .content-item p {
+    font-size: 16px;
+  }
+  /* ! Snap photos section end */
+  /* ! ever posted section start */
+  .ever-posted p {
+    font-size: 16px;
+  }
+  .ever-posted--container {
+    gap: 50px;
+    padding: 30px 0px;
+    flex-direction: column;
+  }
+  .ever-posted--items {
+    flex-basis: 100%;
+  }
+  .ever-posted--items h4 {
+    font-size: 18px;
+  }
+  .ever-posted--items p,
+  .blog-card p {
+    font-size: 16px;
+  }
+  /* ! ever posted section end */
+  /* ! Make your photos section start */
+  .blogs-container {
+    gap: 20px;
+  }
+  .blog-card {
+    flex-basis: 100%;
+  }
+  .blog-card img {
+    width: 100%;
+  }
+  /* ! Make your photos section end */
+  /* ! free trial section start */
+  .form-main--container {
+    width: 100%;
+  }
+  .free-trial {
+    width: 100%;
+    padding: 20px;
+  }
+  .form-h4 {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .input-box {
+    width: 100%;
+  }
+  .input-field {
+    flex-basis: 100%;
+  }
+  .full-btn {
+    width: 100%;
+  }
+  /* ! free trial section end */
+  /* ! Footer Section Start */
+  .top-footer {
+    flex-direction: column;
+    padding-bottom: 50px;
+    gap: 30px;
+  }
+  .top-footer-items {
+    flex-basis: 100%;
+  }
+  .footer-main-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-mid-content {
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .foot-content--left {
+    flex-basis: 100%;
+  }
+  .foot-content--right {
+    flex-basis: 100%;
+  }
+  .footer-btn-grp {
+    flex-direction: row;
+  }
+  .bottom-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .social-links {
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  /* ! Footer Section Start */
+}
